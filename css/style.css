@@ -1,0 +1,490 @@
+/*------------------------------- 
+             General
+-------------------------------*/
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Theme */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 253, 253);
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    background-image: url(../img/bg.png);
+    background-size: 75%;
+}
+
+/* Center content */
+section, .area {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+/*------------------------------- 
+          Intro overlay
+-------------------------------*/
+/* Overlay */
+#block {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.99);
+    z-index: 50;
+    position: fixed;
+    text-align: center;
+}
+
+/* Content */
+#block div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Heading */
+#block h1 {
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Dancing Script';
+    font-size: 2.75em;
+}
+
+/* Button */
+#block p {
+    font-size: 1.5em;
+    padding: 0.75em;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 25px;
+    margin: 1em auto;
+    transition: transform 0.2s ease;
+    width: 250px;
+}
+
+/* Button hover */
+#block p:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*------------------------------- 
+      Landing page/parallax
+-------------------------------*/
+/* Scene wrapper */
+#scene {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Layer takes up full screen */
+#scene > li {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* Layer positioning */
+#scene > li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+}
+
+#scene li:nth-child(2) img {
+    transform: translate(-50%, 0%);
+}
+
+#scene li:nth-child(3) img {
+    transform: translate(-50%, 400%);
+}
+
+/* Overhang branch */
+#scene .branch {
+    width: 120%;
+    height: 100%;
+    position: relative;
+    list-style: none;
+}
+
+/* Branch position */
+#scene .branch img {
+    left: -10%;
+    top: -165px;
+    transform: translate(0%, 0%);
+    width: 100%;
+}
+
+/* Grapes positioning */
+.grapes {
+    background-image: url(../img/grapes2.png);
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    transform-origin: 50% 0%;
+}
+
+.grapes.first {
+    top: 12%;
+    left: 13%;
+}
+
+.grapes.second {
+    top: 11%;
+    left: 50%;
+}
+
+.grapes.third {
+    top: 8%;
+    left: 70%;
+}
+
+/* Leaf positioning */
+.leaf {
+    background-image: url(../img/leaf.png);
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 62px;
+    position: absolute;
+    transform-origin: 50% 0%;
+}
+
+.leaf.first {
+    top: 13%;
+    left: 45%;
+}
+
+.leaf.second {
+    top: 5%;
+    left: 30%;
+}
+
+.leaf.third {
+    top: 13%;
+    left: 65%;
+}
+
+/* Swing aniamtion */
+.swing {
+    animation: swing 3.5s infinite ease-in-out alternate;
+}
+
+/* Reversed animation */
+.swing-reverse {
+    animation: swing 3.5s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes swing {
+    0% { transform: rotateZ(10deg); }
+    100% { transform: rotateZ(-10deg) }
+}
+
+/*------------------------------- 
+              Tree
+-------------------------------*/
+/* Background image */
+.tree {
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/grapebranch.png);
+    background-position-x: 60px;
+    background-repeat: no-repeat;
+}
+
+/* Text wrapper */
+.tree div {    
+    font-style: italic;
+    text-align: center;
+    transition: opacity 1s ease;
+    opacity: 0;
+    bottom: 15%;
+    position: absolute;
+    width: 100%;
+}
+
+/* Text heading */
+.tree h2, .konkurrence-text h2 {
+    font-size: 3em;
+    font-weight: 400;
+}
+
+/* Text */
+.tree p, .konkurrence-text p {
+    width: 1220px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-top: 20px;
+}
+
+section h2, .area h2 {
+    text-align: center;
+}
+
+/*------------------------------- 
+           Moving grape
+-------------------------------*/
+/* Grape */
+#grape {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: calc(100vh + 325px);
+    left: calc(50% + 685px);
+    transition: position 0.1s ease;
+    background-image: url(../img/grape.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* Barrel */
+#barrel {
+    width: 135px;
+    position: absolute;
+    left: calc(50% + 635px);
+    top: 0%;
+}
+
+/* Bottle */
+#bottle {
+    width: 100px;
+    position: absolute;
+    left: calc(50% + 655px);
+    top: 35%;
+}
+
+/* Box */
+#box {
+    width: 175px;
+    position: absolute;
+    left: calc(50% + 635px);
+    top: 10%;
+}
+
+/* Wine glass */
+#glass {
+    width: 175px;
+    position: absolute;
+    left: calc(50% + 620px);
+    bottom: 10%;
+}
+
+/* Branch divider */
+.branch-divider {
+    display: block;
+    margin: 100px auto;
+    width: 800px;
+
+}
+
+/*------------------------------- 
+           Country maps
+-------------------------------*/
+/* Flex wrapper */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1220px;
+    margin: 15em auto 0 auto;
+}
+
+/* Flex item */
+.card {
+    width: 30%;
+    border-radius: 10px;
+    margin: 2em 0;
+    position: relative;
+    text-align: center;
+}
+
+/* Country map image */
+.card img {
+    width: 50%;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+/* Country text */
+.card p {
+    opacity: 0;
+    transition: opacity 1s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 2em);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1em;
+}
+
+/* Show text on hover */
+.card:hover p {
+    opacity: 1;
+}
+
+/*------------------------------- 
+        Wine bottle images
+-------------------------------*/
+/* Background image */
+.container-bg {
+    position: relative;
+    background-image: url(../img/grapebranch2.png);
+    background-position-x: -60px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    margin-top: 150px;
+}
+
+/* Flex wrapper */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-top: 500px;
+    justify-content: center;
+   
+}
+
+/* Flex item */
+.image-card {
+    width: 26%;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    margin: 1em;
+}
+
+/* Wine bottle iamge */
+.image-card img {
+    width: 100%;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+/* Text */
+.image-card p {
+    opacity: 0;
+    transition: opacity 1s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 2em);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1em;
+}
+
+/* Show text on hover */
+.image-card:hover p {
+    opacity: 1;
+}
+
+/*------------------------------- 
+             Video
+-------------------------------*/
+video {
+    width: 100%;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+/*------------------------------- 
+             Video
+-------------------------------*/
+/* Text */
+.konkurrence-text {
+    font-style: italic;
+    text-align: center;
+}
+
+#konkurrence-img {
+    width: 360px;
+    margin-top: 20px;
+}
+
+#konkurrence-leaves {
+    position: absolute;
+    left: -17%;
+    top: 0;
+    opacity: 0.7;
+}
+
+/*------------------------------- 
+             Ending
+-------------------------------*/
+/* Wrapper fade */
+#slutning {
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+/* Heading */
+#slutning h2 {
+    font-size: 3em;
+    font-weight: 400;
+}
+
+/* Image */
+#indehaver {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/*------------------------------- 
+             Footer
+-------------------------------*/
+/* Background image */
+footer {
+    background-image: url(../img/grass.png);
+    height: 1000px;
+    width: 100%;
+    position: relative;
+}
+
+/* Content/flex wrapper */
+footer > div {
+    position: absolute;
+    width: 1220px;
+    height: 350px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    displaY: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Website link */
+footer a {
+    color: #886d23;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.2s ease;
+}
+
+/* Hover color */
+footer a:hover {
+    color: white;
+}
+
+/* SoMe link wrapper */
+.socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* SoMe icons */
+.socials img {
+    width: 50px;
+    margin-left: 1em;
+}

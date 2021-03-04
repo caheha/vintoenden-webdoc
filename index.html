@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon"/>
+    <title>Vintønden - druens rejse til dig</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+
+    <!-- JavaScript-->
+    <script src="js/parallax.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Intro overlay -->
+    <div id="block">
+        <div>
+            <h1>Nogensinde undret dig over, hvor vin kommer fra?</h1>
+            <p>UDFORSK NU</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Parallax scene -->
+        <ul data-relative-input="true" id="scene">
+            <li data-depth="0.2">
+                <img src="img/v.png" alt="Stort V">
+            </li>
+            <li data-depth="0.4">
+                <img src="img/vin.png" alt="Vintønden">
+            </li>
+            <li data-depth="0.6">
+                <img src="img/drops.png" alt="Dråber af guld">
+            </li>
+            <li data-depth="0.8">
+                <ul class="branch">
+                    <li>
+                        <img src="img/branch.png" alt="Gren">
+                    </li>
+                    <li>
+                        <div class="grapes first swing"></div>
+                    </li>
+                    <li>
+                        <div class="grapes second swing-reverse"></div>
+                    </li>
+                    <li>
+                        <div class="grapes third swing"></div>
+                    </li>
+                    <li>
+                        <div class="leaf first swing-reverse"></div>
+                    </li>
+                    <li>
+                        <div class="leaf second swing"></div>
+                    </li>
+                    <li>
+                        <div class="leaf third swing-reverse"></div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Tree with falling grape -->
+        <div class="tree">
+            <div id="text-style">
+                <h2>Druens rejse til dig</h2>
+                <p>
+                    På denne side vil du blive ført igennem rejsen som druen tager, før den lander i dit glas som et
+                    dejligtglas rød eller hvidvin.
+                    <br><br>
+                    Vi starter fra toppen, hvor druen vokser på vinstokke, smagen på vinen afhænger af hvilket land
+                    vinstokkende står i. <br>
+                    Når druen er modnet vil den blive høstet og sat til gæring i vintønder. Herefter vil den
+                    blive hældt på flaske og sendt ud til de forskellige forhandlere inden den ender i vores
+                    hænder. Hos Vintønden.dk, arbejder vi sammen med mange forskellige vinhuse rundt omkring i verden.
+                    <br><br>
+                    Vi stræber efter at levere god vin til dig først og fremmest, men også en
+                    kasse hvor der ligger en oplevelse og venter.<br>
+                    Vi kan b.la. give tips og tricks til hvad den specifikke vin går godt til, 
+                    men også finde på at smide en lille ekstra gave ned til jer.<br>
+                </p>
+            </div>
+        </div>
+
+        <!-- Falling grape -->
+        <div id="grape"></div>
+
+        <!-- Country maps -->
+        <div class="area">
+            <div class="card-container">
+                <div class="card">
+                    <img src="img/map/australien.png" alt="Australien">
+                    <p>
+                        Australiens vinproduktion er en af verdens største, de producere mere end 800 millioner liter
+                        hvert år.
+                        Hver stat i Australien producere vin, og fylder over 160.000 hektar på Australiens jord. Hver
+                        region har hver sin betydning for smagen, her har klimaet og jordtyper en stor betydning for
+                        smagen. Deres mest populære vin typer fra Australien er Shiraz, Cabernet Sauvignon, Chardonnay,
+                        Merlot, Pinot noir og Riesling. </p>
+                </div>
+                <div class="card">
+                    <img src="img/map/frankrig.png" alt="Frankrig">
+                    <p>
+                        Frankring producere mellem 50-60 hektoliters, eller 7-8 milliarder flasker hvert år. Druerne fra
+                        Frankrig bliver plantet over hele verden, hvor deres mest populære vindrue sorter er Cabernet
+                        Sauvignon, Chardonnay, Pinot noir, Sauvignon blanc og Syrah. Frankrig som vinland er fuldstændig
+                        uovertruffen. Det er vinlandet som alle andre vinlande sammenligner sig med.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="img/map/italien.png" alt="Italien">
+                    <p>
+                        Italien er verdens største vin producent, der fylder mere end 702.000 hektar på italiensk jord,
+                        de producere hvert år omkring 48 millioner hekto liter. Italiensk vin bliver nydt over hele
+                        verden, men især hos dem selv er vin populært, de drikker 42 liter pr indbygger hvert år.
+                        Italiensk vin står for kvalitet, akkuratesse og elegance.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="img/map/newzealand.png" alt="New Zealand">
+                    <p>
+                        New Zealands placering på verdenskortet gør at deres vin har en helt specifik smag i forhold til
+                        andre vine. De er mest kendt for deres Marlborough Sauvignon Blanc, men er begyndt og skærer
+                        igennem med deres tætte og koncentrerede Pinot Noir. De producere hvert år omkring 297 millioner
+                        liter vin, hvor 90% bliver eksporterede til andre lande som USA, England og Australien
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="img/map/portugal.png" alt="Portugal">
+                    <p>
+                        Portugisisk vin er en sammensmeltning af de forskellige civilisationer der har boet i Portugal
+                        igennem tiden. Blandt andet har Grækenland og Rom haft en stor indflydelse på hvordan deres vin
+                        produktion har forgået. De producere derfor en lang række forskellige vine, som hver især har
+                        sin egen distinkte smag. Douro vin, Dao vin og Bairrada vin er nogen af deres mest populære vin
+                        regioner.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="img/map/spanien.png" alt="Spanien">
+                    <p>
+                        Spanien har over 1.2 millioner hektar vin plantager, og spanskerne er vilde med deres vin, de
+                        drikker gennemsnitligt 21,6 liter pr indbygger hvert år. De har 400 forskellige vindrue sorter
+                        spredt ud over landet, men 88% af deres vin produktion kommer fra 20 forskellige vindrue sorter,
+                        det er blandt andet Tempranillo, Bobal, Verdejo, Palomino. Vinene adskiller sig fra dem du
+                        finder i Italien og Frankrig, ved at være meget kraftfulde og samtidig meget elegante.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="img/map/sydafrika.png" alt="Sydafrika">
+                    <p>
+                        Sydafrikas første vin blev produceret i Cape Town af Jan van Riebeeck. Efter har vin produktionen
+                        kun gået en vej, hvor den nu dækker 110.000 hektar af Sydafrikas jord. Deres mest produceret
+                        druer er Chenin Blanc, Cabernet Sauvignon, Colombard og Shiraz. I Sydafrika finder du
+                        fantastiske rødvine og hvidvine. De sydafrikanske vine er begunstiget af det varme klima, som
+                        skaber perfekte forhold for modningen af druerne. Varmen smages også i vinene fra Sydafrika,
+                        hvor smagen ofte er blid, rund og samtidig kraftig i smagen.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="img/map/tyskland.png" alt="Tyskland">
+                    <p>
+                        Tysk vin bliver produceret typisk produceret langs floden Rhine, dette giver gode forhold for
+                        vinen, og mere end 60 procent af tysk vin bliver produceret her. Tyskland har 103.000 hektar vin
+                        plantager, og deres årlige vinproduktion ligger på omkring 10 millioner hektoliter. Især deres
+                        hvidvin Liebfraumilch er verdenskendt for dens aromatiske, frugtige og elegante smag.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="img/map/usa.png" alt="Amerika">
+                    <p>
+                        USA har produceret vin siden 1500 tallet, og den dag i dag bliver der produceret vin i alle
+                        stater, dog fører Californien vin produktionen i USA med hele 89% af den samlede mængde.
+                        1.100.000 millioner hektar dækker vin produktionen, hvor størstedelen af druerne kommer fra
+                        Europæriske vindrue sorter.
+                    </p>
+                </div>
+            </div>
+            <img src="img/barrel.png" id="barrel" alt="Tønde"> <!-- Barrel -->
+        </div>
+
+        <!-- Wine bottle images -->
+        <div class="area container-bg">
+            <div class="image-container">
+                <div class="image-card">
+                    <img src="img/vin1.png" alt="LANGHE - Pinot Nero">
+                    <p>
+                        Vinen er fra Deletto og lavet på 100 procent Pinot Nero. Vinen er kraftig med en flot friskhed.
+                        Du vil opleve flotte noter af grønne frugter som æble, pære og stikkelsbær.
+                        <br><br>
+                        Serveringsforslag:<br>
+                        Vinen gør det rigtig godt til lettere retter såsom lys fisk, skaldyr og kylling. Vi anbefaler at
+                        du servere vinen afkølet. Gerne omkring 10-12 grader.
+                    </p>
+                </div>
+                <div class="image-card">
+                    <img src="img/vin2.png" alt="CONDE D - San Christobal">
+                    <p>
+                        Kraftig og dejlig intens rødvin med en flot rubinrød farve. I smagen vil du opleve noter af dybe 
+                        røde bær, især kirsebær er fremtrædende. Vinen lagres også på franske egetræsfade som resultere 
+                        i noter af peber og vanilje. 
+                        <br><br>
+                        Serveringsforslag:<br>
+                        Vinens kraftige natur spiller super godt op til retter med okse - og kalvekød. Du kan også med 
+                        fordel nyde den sammen med et stykke modent ost. Serveringstemperatur anbefales at være 15-18 grader.
+                    </p>
+                </div>
+                <div class="image-card">
+                    <img src="img/vin3.png" alt="VILLA MONEPALDI - Chianti Classico">
+                    <p>
+                        Gennemført glas rødvin hvis noter præget af røde fruger hvor vl.a. blommer og brombær er fremtræden. 
+                        Vin er frisk og frugtagtig med bløde elegante tanniner samt en velafbalanceret syre. 
+                        <br><br>
+                        Serveringsforslag:<br>
+                        Vi anbefaler at du yder vinen til et stykke okse - eller lammekød. Vinen har dog også nok karakter 
+                        til at du kan nyde den uden mad. Serveringstemperatur anbefales at være ca. 18 grader .
+                    </p>
+                </div>
+                <div class="image-card">
+                    <img src="img/vin4.png" alt="RETZBACHER - Grau Burgunder">
+                    <p>
+                        Flot lemon-farve, og er frisk, frugtagtig med en god aromatisk tæthed, som bære noter af tropiske 
+                        frugter som blommer og vandmelon. 
+                        <br><br>
+                        Serveringsforslag:<br>
+                        Vi anbefaler at du servere vinen til let fisk, grøntsagsretter eller fjerkræ. Vinen har rigtig 
+                        godt at være til den kølige side, derfor anbefales en serveringstemperatur på 11 grader. 
+                    </p>
+                </div>
+                <div class="image-card">
+                    <img src="img/vin5.png" alt="BEAUJJOLAIS - Pardon & Fils">
+                    <p>
+                        Med denne vin vil du først opleve en utrolig frugtig næse. Herefter kommer der en super aromatisk 
+                        smag der præges af citrusfrugter, blomster og nødder. Vinen afsluttes med en dejlig lang 
+                        vedholdende eftersmag. 
+                        <br><br>
+                        Serveringsforslag:<br>
+                        Vinen passer rigtig godt til forretter med fisk og skaldyr. Det anbefales også at du nyder 
+                        vinen afkølet for den bedste smagsoplevelse. 
+                    </p>
+                </div>
+                <div class="image-card">
+                    <img src="img/vin6.png" alt="LES TERRASSES - Sauvignon-Grenache">
+                    <p>
+                        Denne frembringer noter af grønne og sommerlige frugter som pære, grønt æble og ferskner. 
+                        Let og forfriskende hvid vin fra Les Terrases.
+                        <br><br>
+                        Serveringsforslag:<br>
+                        Vi anbefaler at du servere vinen til let fisk, grøntsagsretter eller fjerkræ. 
+                        Vinen har rigtig godt at være til den kølige side, derfor anbefales en serveringstemperatur 
+                        på 11 grader.
+                    </p>
+                </div>
+            </div>
+            <img src="img/bottle.png" id="bottle" alt="Flaske"> <!-- Bottle -->
+        </div>
+
+        <!-- Branch divider -->
+        <img src="img/branch2.png" class="branch-divider" alt="Gren">
+
+        <!-- Video -->
+        <div class="area">
+            <video controls loop src="video/video.mp4" id="video"></video>
+            <img src="img/kasse.png" id="box" alt="Box"> <!-- Box -->
+        </div>
+
+        <!-- Branch divider -->
+        <img src="img/branch2.png" class="branch-divider" alt="Gren">
+
+        <!-- Konkurrence -->
+        <section class="konkurrence-text">
+            <h2>Vind vin hjem til dig</h2>
+            <p>
+                Lyder 5 liter god rødvin som noget for dig?<br><br>
+                Vi giver lige nu en Corte Gioliare Bardolino Magnum flaske på 5 liter, ud til en af jer. 
+                Denne vin er i den kraftige ende, men samtidig med en blød overgang. Du vil få strejf af mørke bær, 
+                som blåbær og solbær. Den passer perfekt til okse - lammekød, på samme tid kan den være helt perfekt 
+                til en tung pasta ret. 
+                <br><br>
+                Det eneste du skal gøre for at deltage i denne konkurrence er:<br>
+                1: Gå ind på vintoenden.dk, rul helt ned i bunden og tilmeld dig vores nyhedsbrev.
+                <br><br>
+                Disse steps er ikke et must, men vi ville blive utrolig glade for det 
+                <br><br>
+                1: Gå ind på vores Facebook og Instagram side og give os et like.<br>
+                2: På begge sider ligger der et opslag med vinen. Dette giver du et like og en kommentar med hvem 
+                du ville dele den med.
+                <br><br>
+                *Vi finder en vinder d. 28 marts, og kontakter vedkommende direkte på den mail som du har tilmeldt 
+                nyhedsbrevet til 
+                <br><br>
+                Held og lykke til alle!
+            </p>
+            <img src="img/konkurrence.jpg" id="konkurrence-img" alt="Vin flaske">
+            <img src="img/leaves.png" id="konkurrence-leaves" alt="Blade">
+        </section>
+
+        <!-- Branch divider -->
+        <img src="img/branch2.png" class="branch-divider" alt="Gren">
+
+        <!-- End -->
+        <section>
+            <div id="slutning">
+                <h2> SKÅL!</h2>
+                <img src="img/vinejer.jpg" id="indehaver" alt="Indehavere af Vintønden, Anders & Mathias">
+            </div>
+            <img src="img/glas.png" id="glass" alt="Vinglas"> <!-- Wine glass -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <div>
+                <a href="https://vintoenden.dk/">Vintønden.dk</a>
+            </div>
+            <div class="socials">
+                <a href="mailto:info@vintoenden.dk"><img src="img/mail.png" alt="Mail"></a>
+                <a href="https://www.facebook.com/Vintondendk"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/vintoenden.dk/"><img src="img/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
