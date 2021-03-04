@@ -85,10 +85,10 @@ document.onscroll = () => {
     // End + hide grape
     if (grapePassed(glass)){
         glassPic.style.opacity = "1";
-        grape.style.opacity ="0";
+        grape.style.opacity = "0";
     } else {
         glassPic.style.opacity = "0";
-        grape.style.opacity ="1";
+        grape.style.opacity = "1";
     }
 };
 
